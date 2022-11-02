@@ -4,7 +4,7 @@ import Button from '../../Button/Button';
 
 export default function Service({ title, cardData }) {
   return (
-    <section className='bg-hero-pattern bg-secondary-bg mt-6 py-44 md:w-full'>
+    <section className='bg-hero-pattern bg-secondary-bg mt-6 pt-44 pb-28 md:w-full'>
       <div className='grid grid-cols-[300px_200px_250px_250px] mx-auto container gap-[55px]'>
         <div className='col-span-2 row-span-3 lg:mx-16'>
           <h1 className='text-white text-[54px] font-primary-font font-bold text-start -mt-5'>

@@ -40,10 +40,7 @@ export default function Navigation() {
         )}
         <div className='flex items-center md:mx-auto lg:gap-8 lg:mx-16'>
           <ul className='md:flex items-center justify-between lg:gap-8 hidden text-base font-semibold'>
-            <li className='cursor-pointer hover:text-primary'>
-              Projects{' '}
-              <div className=' bg-primary rounded-full w-2 h-2 mx-auto hidden'></div>
-            </li>
+            <li className='cursor-pointer hover:text-primary'>Projects</li>
             <li className='cursor-pointer hover:text-primary'>Services</li>
             <li className='cursor-pointer hover:text-primary'>About Us</li>
             <li className='cursor-pointer hover:text-primary'>Careers</li>
