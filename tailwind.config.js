@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/images/noise.png')",
+        'hero-job': "url('/images/job-application.webp')",
       },
     },
   },

@@ -4,16 +4,16 @@ import Button from '../Button/Button';
 
 export default function Footer() {
   return (
-    <section className='bg-hero-pattern bg-secondary-bg mt-6 pt-24'>
+    <section className='bg-hero-pattern bg-secondary-bg pt-24'>
       <div className='flex items-center justify-between mx-16'>
         <Image
           src='/images/logo-w.svg'
           width='150'
           height='200'
           alt='logo'
-          className=''
+          className='hiddden md:block'
         />
-        <h4 className='text-white text-[32px] font-primary-font font-bold pr-64'>
+        <h4 className='text-white text-[32px] font-primary-font font-bold pr-64 md:mx-0 mx-auto'>
           All software, zero bullshit.
         </h4>
       </div>
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='flex text-white items-center justify-between border-b border-paragrah-color py-4 mx-16 mt-20'>
+      <div className='flex text-white items-center justify-between border-b border-paragrah-color py-6 mx-16 mt-20'>
         <p className='self-end underline font-primary-font text-sm text-default'>
           hello@cinnamon.agency
         </p>
@@ -90,17 +90,19 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className='text-white'>
-        <div>
+      <div className='text-white flex mx-16 py-8 justify-between'>
+        <div className='flex gap-4 text-paragrah-color text-base font-primary-font'>
           <p>© 2022 Cinnamon</p>
-          <p>Privacy Policy</p>
+          <p className='underline'>Privacy Policy</p>
         </div>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-        </ul>
+        <div className='flex gap-4'>
+          <Image width='21' height='21' src='/images/linkd.svg' alt='linkd' />
+          <Image width='21' height='21' src='/images/glob.svg' alt='linkedin' />
+          <Image width='21' height='21' src='/images/be.svg' alt='linkedin' />
+          <Image width='21' height='21' src='/images/inst.svg' alt='linkedin' />
+          <Image width='21' height='21' src='/images/fb.svg' alt='linkedin' />
+          <Image width='21' height='21' src='/images/wif.svg' alt='linkedin' />
+        </div>
       </div>
     </section>
   );

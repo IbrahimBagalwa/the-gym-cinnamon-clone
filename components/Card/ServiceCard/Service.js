@@ -5,8 +5,8 @@ import Button from '../../Button/Button';
 export default function Service({ title, cardData }) {
   return (
     <section className='bg-hero-pattern bg-secondary-bg mt-6 pt-44 pb-28 md:w-full'>
-      <div className='grid grid-cols-[300px_200px_250px_250px] mx-auto container gap-[55px]'>
-        <div className='col-span-2 row-span-3 lg:mx-16'>
+      <div className='grid md:grid-cols-[300px_200px_250px_250px] mx-auto container gap-[55px]'>
+        <div className='md:col-span-2 md:row-span-3 lg:mx-16'>
           <h1 className='text-white text-[54px] font-primary-font font-bold text-start -mt-5'>
             {title}
           </h1>
@@ -35,7 +35,7 @@ const CardService = ({ subtitle, description, picture }) => {
         alt={subtitle}
         className='mb-3'
       />
-      <h5 className='text-2xl font-primary-font font-semibold text-white py-6 pr-4'>
+      <h5 className='text-2xl font-primary-font font-semibold text-white py-6 md:pr-4'>
         {subtitle}
       </h5>
       <p className='text-paragrah-color text-base pb-8'>{description}</p>
