@@ -4,11 +4,11 @@ import Button from '../../Button/Button';
 
 export default function Service({ title, cardData }) {
   return (
-    <section className='bg-hero-pattern bg-secondary-bg mt-6 pt-44 pb-28 md:w-full'>
+    <section className='bg-hero-pattern bg-secondary-bg lg:mt-6 lg:pt-44 lg:pb-28 pb-44 pt-20 md:w-full'>
       <div className='mx-auto container'>
-        <div className='flex w-[1120px] h-[803px] gap-[100px] lg:mx-16'>
-          <div className=' w-[352px] h-[730px]'>
-            <h1 className='text-white text-[54px] font-primary-font font-bold text-start -mt-5'>
+        <div className=' lg:flex w-[1120px] h-[803px] gap-[100px] lg:mx-16 mx-8'>
+          <div className=' w-[352px] lg:h-[730px]'>
+            <h1 className='text-white text-[54px] font-primary-font font-bold text-start lg:-mt-5 mb-8'>
               {title}
             </h1>
           </div>
