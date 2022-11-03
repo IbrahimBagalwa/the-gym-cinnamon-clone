@@ -28,7 +28,7 @@ export default function Home() {
       <Hero />
       {data.map((item) => {
         return (
-          <div key={item.id} className='mb-32'>
+          <div key={item.id} className='lg:mb-32 mb-10'>
             <CardImage {...item} />
           </div>
         );

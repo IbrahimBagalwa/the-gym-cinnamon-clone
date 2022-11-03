@@ -10,7 +10,7 @@ export default function CardImage({
 }) {
   return (
     <div className='container mx-auto'>
-      <div className='lg:mx-16 mt-40 overflow-hidden group'>
+      <div className='lg:mx-16 mx-8 lg:mt-40 mt-24 overflow-hidden group'>
         <div className={'cursor-pointer overflow-hidden group ' + colorCover}>
           <Image
             src={picture}
@@ -26,10 +26,10 @@ export default function CardImage({
           })}
         </div>
         <div className='mt-8'>
-          <h2 className='text-[40px] font-mont-bold text-secondary w-2/4'>
+          <h2 className='text-[40px] font-mont-bold text-secondary lg:w-2/4'>
             {title}
           </h2>
-          <p className='text-card-paragrah font-primary-font pr-62 w-3/5 text-base mt-4'>
+          <p className='text-card-paragrah font-primary-font pr-62 lg:w-3/5 text-base mt-4'>
             {description}
           </p>
         </div>
