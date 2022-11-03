@@ -7,7 +7,7 @@ export default function CollegeTeam({ title, description, image }) {
     <section className=' w-full'>
       <div className=' container mx-auto'>
         <div
-          className={`flex lg:w-[1120px] lg:h-[192px] lg:items-center md:flex-col lg:flex-row lg:gap-[200px] lg:mx-16 mx-8 lg:pt-52 lg:mt-20 md:py-20`}
+          className={`flex lg:w-[1120px] lg:h-[192px] lg:items-center md:flex-col lg:flex-row lg:gap-[200px] lg:mx-16 mx-8 lg:pt-72 lg:mt-10 md:py-20`}
         >
           <Image
             width='300'
@@ -30,7 +30,7 @@ export default function CollegeTeam({ title, description, image }) {
           width='556'
           height='402'
           alt='people'
-          className='-mt-28'
+          className='-mt-56'
         />
       </div>
     </section>
