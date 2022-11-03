@@ -5,24 +5,30 @@ import Button from '../../Button/Button';
 export default function About({ title, image, description, items }) {
   return (
     <section className='bg-default '>
-      {/* <div className=' w-[1263px] h-[1156]'> */}
       <div className='flex py-28'>
         <div className='container mx-auto'>
-          <div className='w-[820px] h-[666px] mx-16'>
+          <div className='w-[820px] lg:h-[666px] lg:mx-16 mx-8'>
             <div>
-              <h2 className='w-[1120px] h-[72px] font-mont-bold text-secondary text-[54px] mb-6'>
+              <h2 className='w-[1120px] lg:h-[72px] font-mont-bold text-secondary text-[54px] lg:mb-6'>
                 {title}
               </h2>
-              <p className='w-[448px] h-[78px] text-base text-card-paragrah font-primary-font mb-6'>
+              <p className='lg:w-[448px] w-[394px] lg:h-[78px] text-base text-card-paragrah font-primary-font lg:mb-6'>
                 {description}
               </p>
             </div>
-            <div className='flex flex-wrap'>
+            <Image
+              width='340'
+              height='409'
+              src={image}
+              alt='about'
+              className='md:block lg:hidden py-6'
+            />
+            <div className='lg:flex flex-wrap hidden'>
               {items.map((item) => {
                 return <Career key={item.id} {...item} />;
               })}
             </div>
-            <div className='pt-16'>
+            <div className='lg:pt-16'>
               <Button title='Read About us' />
             </div>
           </div>
@@ -32,7 +38,7 @@ export default function About({ title, image, description, items }) {
           height='539'
           src={image}
           alt='about'
-          className='py-20'
+          className='lg:block hidden py-20'
         />
       </div>
       {/* </div> */}

@@ -11,7 +11,7 @@ export default function CardOffice({ title, officeData }) {
       </h2>
       <div
         className={`flex justify-between transition-all duration-700 w- gap-8 ml-16 w-[1263px] ${
-          scrolled ? '-translate-x-[50%]' : 'translate-x-[0%]'
+          scrolled ? '-translate-x-[44.7%]' : 'translate-x-[0%]'
         }`}
       >
         {officeData.map((office) => {

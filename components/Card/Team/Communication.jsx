@@ -3,17 +3,17 @@ import React from 'react';
 
 export default function Communication() {
   return (
-    <section className='pt-20 pb-32'>
+    <section className='lg:pt-20 pb-32'>
       <div className='mx-auto container'>
-        <div className='flex mx-16 items-center gap-[280px]'>
+        <div className='flex lg:mx-16 mx-8 items-center lg:gap-[280px]'>
           <div>
-            <div className='text-[#5135ff1a] text-[258px] font-mont-bold -ml-[75px]'>
+            <div className='text-[#5135ff1a] text-[258px] font-mont-bold lg:-ml-[75px] -ml-[60px]'>
               “
             </div>
-            <h3 className='w-[658px] h-[112px] text-secondary font-mont-bold text-[40px] -mt-[270px]'>
+            <h3 className='lg:w-[658px] lg:h-[112px] text-secondary font-mont-bold lg:text-[40px] md:text-[30px] -mt-[270px]'>
               They’re consistent, and the communication is good.
             </h3>
-            <p className='w-[600px] h-[78px] font-primary-font text-base text-card-paragrah mb-[32px] mt-[32px]'>
+            <p className='lg:w-[600px] h-[78px] font-primary-font text-base text-card-paragrah mb-[32px] mt-[32px]'>
               When I have a deadline, they would work extra hours on the weekend
               and after hours. Cinnamon gives the impression of being a smaller
               team that’s focused on customers.
@@ -24,9 +24,10 @@ export default function Communication() {
             width='200'
             height='68'
             alt='pigLogo'
+            className='hidden lg:block'
           />
         </div>
-        <div className='flex items-center gap-4 mx-16'>
+        <div className='lg:flex items-center gap-4 lg:mx-16 mx-8'>
           <Image width='68' height='68' src='/images/GarinProfile.webp' />
           <div>
             <h5 className='text-secondary text-2xl font-mont-bold h-[36px]'>
@@ -37,8 +38,8 @@ export default function Communication() {
             </p>
           </div>
         </div>
-        <div className='flex justify-between mb-10'>
-          <div className='flex mx-16 gap-12 cursor-pointer mt-14'>
+        <div className='flex lg:justify-between lg:mb-10 md:flex-col'>
+          <div className='flex lg:mx-16 mx-8 gap-12 cursor-pointer mt-14'>
             <Image
               width='48'
               height='27'
@@ -54,7 +55,7 @@ export default function Communication() {
               className='hover:-translate-y-2 duration-500'
             />
           </div>
-          <div className='text-primary flex mx-16 gap-4 text-base font-primary-font font-bold cursor-pointer mt-14'>
+          <div className='text-primary flex lg:mx-16  mx-8 gap-4 text-base font-primary-font font-bold cursor-pointer mt-14'>
             <Image
               width='8'
               height='12'
