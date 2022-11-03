@@ -36,15 +36,15 @@ export default function Navigation() {
             className='lg:mx-16 mx-8'
           />
         )}
-        <div className='flex items-center md:hidden lg:gap-8 lg:mx-16'>
-          <ul className='md:flex items-center justify-between lg:gap-8 hidden text-base font-mont-semibold'>
+        <div className='lg:flex items-center hidden lg:gap-8 lg:mx-16'>
+          <ul className='lg:flex items-center justify-between lg:gap-8 hidden text-base font-mont-semibold'>
             <li className='cursor-pointer hover:text-primary'>Projects</li>
             <li className='cursor-pointer hover:text-primary'>Services</li>
             <li className='cursor-pointer hover:text-primary'>About Us</li>
             <li className='cursor-pointer hover:text-primary'>Careers</li>
             <li className='cursor-pointer hover:text-primary'>Blog</li>
           </ul>
-          <div className='md:flex items-center lg:gap-8 md:gap-4 hidden'>
+          <div className='lg:flex items-center lg:gap-8 hidden'>
             <div
               className={
                 nav
