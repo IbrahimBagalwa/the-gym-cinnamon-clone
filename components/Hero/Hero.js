@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <div className='bg-hero-pattern bg-secondary-bg -mt-20- py-44'>
+    <div className='bg-hero-pattern bg-secondary-bg lg:-mt-20- lg:py-44 py-20'>
       <div className='container mx-auto'>
         <h1 className='lg:text-[80px] text-4xl lg:mx-16 font-mont-heavy leading-tight tracking-tight text-default mx-8'>
           Results focused design & development agency.
