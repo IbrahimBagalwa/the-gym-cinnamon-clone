@@ -14,11 +14,9 @@ export default function Navigation() {
 
   return (
     <section
-      className={
-        nav
-          ? 'bg-white text-secondary fixed w-full mt-8 h-24 -top-8 z-40'
-          : 'bg-transparent text-default fixed w-full mt-8 h-24 -top-8 z-40'
-      }
+      className={`fixed w-full mt-8 h-24 -top-8 z-40 ${
+        nav ? 'bg-white text-secondary' : 'bg-transparent text-default'
+      }`}
     >
       <div className='flex items-center justify-between  mx-auto container py-5'>
         {nav ? (
@@ -39,7 +37,7 @@ export default function Navigation() {
           />
         )}
         <div className='flex items-center md:mx-auto lg:gap-8 lg:mx-16'>
-          <ul className='md:flex items-center justify-between lg:gap-8 hidden text-base font-semibold'>
+          <ul className='md:flex items-center justify-between lg:gap-8 hidden text-base font-mont-semibold'>
             <li className='cursor-pointer hover:text-primary'>Projects</li>
             <li className='cursor-pointer hover:text-primary'>Services</li>
             <li className='cursor-pointer hover:text-primary'>About Us</li>

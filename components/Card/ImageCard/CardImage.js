@@ -20,16 +20,16 @@ export default function CardImage({
             className='mx-auto group-hover:scale-105 transition-all duration-700 '
           />
         </div>
-        <div className='flex justify-start items-center gap-8 font-primary-font text-card-color text-xs font-semibold uppercase mt-8'>
+        <div className='flex justify-start items-center gap-8 text-card-color text-xs font-mont-bold uppercase mt-8'>
           {subtitle.map((sub, index) => {
             return <h3 key={index}>{sub}</h3>;
           })}
         </div>
         <div className='mt-8'>
-          <h2 className='text-5xl font-semibold text-secondary w-2/4'>
+          <h2 className='text-[40px] font-mont-bold text-secondary w-2/4'>
             {title}
           </h2>
-          <p className='text-card-paragrah pr-62 w-3/5 text-base mt-4'>
+          <p className='text-card-paragrah font-primary-font pr-62 w-3/5 text-base mt-4'>
             {description}
           </p>
         </div>

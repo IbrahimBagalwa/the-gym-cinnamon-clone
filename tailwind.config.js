@@ -18,13 +18,22 @@ module.exports = {
         'card-green': '#91F1C3',
         'card-violet': '#52247F',
         'card-orange': '#FFCB49',
+        'grow-color': '#f2f2f2',
+        'btn-color': 'hsla(0,0%,100%,.7)',
       },
       fontFamily: {
-        'primary-font': ['MontHeavy', 'sans-serif'],
+        'primary-font': "Mont,'arial'",
+        primary: "Mont,'sans-serif'",
+        'mont-semibold': "'MontSemiBold','arial'",
+        'mont-bold': "'MontBold','arial'",
+        'mont-heavy': "'MontHeavy','arial'",
       },
       backgroundImage: {
         'hero-pattern': "url('/images/noise.png')",
         'hero-job': "url('/images/job-application.webp')",
+      },
+      sepia: {
+        25: 'hsla(0,0%,100%,.7)',
       },
     },
   },
