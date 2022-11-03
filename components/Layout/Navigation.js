@@ -36,7 +36,7 @@ export default function Navigation() {
             className='lg:mx-16 mx-8'
           />
         )}
-        <div className='flex items-center md:mx-auto lg:gap-8 lg:mx-16'>
+        <div className='flex items-center md:hidden lg:gap-8 lg:mx-16'>
           <ul className='md:flex items-center justify-between lg:gap-8 hidden text-base font-mont-semibold'>
             <li className='cursor-pointer hover:text-primary'>Projects</li>
             <li className='cursor-pointer hover:text-primary'>Services</li>
@@ -74,7 +74,7 @@ export default function Navigation() {
             <Button title='Contact Us' />
           </div>
         </div>
-        <div className='lg:hidden md:hidden mx-8'>
+        <div className='lg:hidden mx-8'>
           {nav ? (
             <Image
               src='/images/menu-dark.svg'
