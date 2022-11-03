@@ -6,12 +6,12 @@ export default function Growing({ title, description, careers }) {
   return (
     <section className='bg-hero-pattern bg-secondary-bg py-24'>
       <div className='container mx-auto '>
-        <div className='flex w-[1263px] h-[291px] items-center gap-[120px] mx-16'>
-          <div className='w-[448px] h-[291px]'>
-            <h2 className='w-[448px] h-[72px] font-mont-bold text-[54px] text-grow-color mb-8'>
+        <div className='flex lg:w-[1263px] lg:h-[291px] md:flex-col lg:flex-row lg:items-center lg:gap-[120px] md:gap-16 lg:mx-16 mx-8'>
+          <div className='w-[448px] lg:h-[291px]'>
+            <h2 className='lg:w-[448px] lg:h-[72px] font-mont-bold text-[54px] text-grow-color lg:mb-8 md:mb-4'>
               {title}
             </h2>
-            <p className='w-[430px] h-[104px] text-base font-primary-font text-paragrah-color mb-4'>
+            <p className='lg:w-[430px] h-[104px] text-base font-primary-font text-paragrah-color mb-4'>
               {description}
             </p>
             <Button title='See all Positions' />
@@ -34,8 +34,8 @@ export default function Growing({ title, description, careers }) {
 
 function Careers({ career, icon }) {
   return (
-    <div className='flex items-center justify-center h-[120px] gap-[10px]'>
-      <p className='w-[400px] font-mont-semibold text-grow-color text-2xl'>
+    <div className='flex lg:items-center lg:justify-center lg:h-[120px] lg:gap-[10px] md:justify-between md:py-6'>
+      <p className='lg:w-[400px] font-mont-semibold text-grow-color text-2xl'>
         {career}
       </p>
       <Image
