@@ -7,20 +7,29 @@ export default function TeamCard({ title, description, image, gap }) {
     <section className=' bg-default w-full'>
       <div className=' container mx-auto'>
         <div
-          className={`flex w-[1120px] h-[192px] items-center  gap-${gap} mx-16 pt-32`}
+          className={`lg:flex lg:w-[1120px] lg:h-[192px] items-center py-20 lg:py-0  lg:gap-${gap} lg:mx-16 lg:pt-32 mx-8`}
         >
-          <h2 className='font-mont-bold text-[54px] text-secondary w-[448px] h-[144px]'>
+          <h2 className='font-mont-bold text-[54px] text-secondary lg:w-[448px] lg:h-[144px]'>
             Agile team <br /> on demand
           </h2>
-          <div>
-            <p className='text-base font-primary-font w-[352px] text-card-paragrah h-[104px]'>
+          <div className='lg:hidden block'>
+            <Image
+              src={image}
+              width='338'
+              height='220'
+              alt={title}
+              className=''
+            />
+          </div>
+          <div className=''>
+            <p className='text-base font-primary-font lg:w-[352px] text-card-paragrah lg:h-[104px] pb-8 lg:pb-0'>
               {description}
             </p>
             <Button title='See How It Works' />
           </div>
         </div>
       </div>
-      <div className='flex justify-end'>
+      <div className='hidden lg:flex justify-end'>
         <Image src={image} width='338' height='220' alt={title} className='' />
       </div>
     </section>
