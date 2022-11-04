@@ -4,6 +4,11 @@ export const techData = [
     title: 'Differences in Hiring an Agency vs. Freelancers 2.0',
     image: '/images/Freelance_VS.webp',
     subtitle: 'SALES',
+    detail: {
+      author: 'Matija Bermanec & Lorena Ujević',
+      date: '2022-10-13',
+      min: '6min',
+    },
   },
 
   {
@@ -11,12 +16,18 @@ export const techData = [
     title: 'Cinnamon Flutter Template Overview',
     image: '/images/Flutter_Template.webp',
     subtitle: 'DEVELOPMENT',
+    detail: { author: 'Samantha Holstead', min: '3min', date: '2022-10-03' },
   },
   {
     id: 3,
     title: '  How Tinder Swindled User Experience',
     image: '/images/Tinder_blog.webp',
     subtitle: 'DESIGN',
+    detail: {
+      author: 'Jan Marin',
+      date: '2022-09-15',
+      min: '10min',
+    },
   },
 ];
 export const detailData = [

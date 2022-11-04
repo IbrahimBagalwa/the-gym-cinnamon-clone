@@ -52,7 +52,6 @@ export default function Home() {
       <CardTech
         title='Stay in the loop on tech topics'
         titleLink='VIEW MORE BLOGS'
-        techData={techData}
       />
       <section className='bg-default'>
         <div className=' mx-auto container w-full relative'>
