@@ -14,7 +14,7 @@ export default function Growing({ title, description, careers }) {
             <p className='lg:w-[430px] h-[104px] text-base font-primary-font text-paragrah-color mb-4'>
               {description}
             </p>
-            <Button title='See all Positions' />
+            <Button>See all Positions</Button>
           </div>
           <div>
             {careers.map((car) => {

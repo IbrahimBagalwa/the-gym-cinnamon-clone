@@ -56,15 +56,15 @@ export default function Home() {
       />
       <section className='bg-default'>
         <div className=' mx-auto container w-full relative'>
-          <div className='-mb-44 relative pt-28'>
-            <h2 className='text-center text-secondary text-[54px] font-mont-bold leading-10'>
+          <div className='lg:-mb-44 md:-mb-20 relative pt-28'>
+            <h2 className='text-center text-secondary text-[54px] font-mont-bold leading-10 hidden md:block'>
               Have a project in mind?
             </h2>
-            <h2 className='text-center text-secondary text-[54px] font-mont-bold  mb-14'>
+            <h2 className='text-center text-secondary text-[54px] leading-[50px] md:leading-normal font-semibold  md:font-mont-bold  mb-14 '>
               Let's work together.
             </h2>
             <div className='w-full flex'>
-              <Button title='Contact us' styles='mx-auto px-12' />
+              <Button styles='mx-auto px-12'>Contact us</Button>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
           height='600'
           src='/images/job-application.webp'
           alt='job'
-          className=''
+          className='md:w-[200px] w-[100px] lg:w-[450px]'
         />
       </section>
     </div>

@@ -54,8 +54,8 @@ export default function Navigation() {
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
+                width='15'
+                height='15'
                 viewBox='0 0 24 24'
                 fill='white'
                 stroke='white'
@@ -71,7 +71,7 @@ export default function Navigation() {
                 <polygon points='5 3 19 12 5 21 5 3'></polygon>
               </svg>
             </div>
-            <Button title='Contact Us' />
+            <Button>Contact Us</Button>
           </div>
         </div>
         <div className='lg:hidden mx-8'>

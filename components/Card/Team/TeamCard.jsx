@@ -25,7 +25,7 @@ export default function TeamCard({ title, description, image, gap }) {
             <p className='text-base font-primary-font lg:w-[352px] text-card-paragrah lg:h-[104px] pb-8 lg:pb-0'>
               {description}
             </p>
-            <Button title='See How It Works' />
+            <Button>See How It Works</Button>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ export default function About({ title, image, description, items }) {
               })}
             </div>
             <div className='lg:pt-16'>
-              <Button title='Read About us' />
+              <Button>Read About us</Button>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ export default function Service({ title, cardData }) {
               );
             })}
             <div className=''>
-              <Button title='See our services' />
+              <Button>See our services</Button>
             </div>
           </div>
         </div>

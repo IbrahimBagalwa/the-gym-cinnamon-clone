@@ -32,8 +32,9 @@ module.exports = {
         'hero-pattern': "url('/images/noise.png')",
         'hero-job': "url('/images/job-application.webp')",
       },
-      sepia: {
-        25: 'hsla(0,0%,100%,.7)',
+      boxShadow: {
+        btn: 'rgb(81 53 255) 0px 0px 0px 300px inset',
+        white: 'rgb(255 255 255) 0px 0px 0px 155px inset',
       },
     },
   },

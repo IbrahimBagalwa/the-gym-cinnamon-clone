@@ -6,11 +6,11 @@ export default function CardOffice({ title, officeData }) {
   const [scrolled, setSrolled] = useState(false);
   return (
     <section className='mb-28 container mx-auto'>
-      <h2 className='text-[54px] text-secondary font-mont-bold w-[480px] h-[144px] leading-tight mx-16 mt-20'>
+      <h2 className='text-[54px] text-secondary font-mont-bold w-[480px] h-[144px] leading-tight lg:mx-16 mx-8 mt-20'>
         {title}
       </h2>
       <div
-        className={`flex justify-between transition-all duration-700 w- gap-8 ml-16 w-[1263px] ${
+        className={`flex justify-between transition-all duration-700 w- gap-8 lg:ml-16 ml-8 w-[1263px] ${
           scrolled ? '-translate-x-[44.7%]' : 'translate-x-[0%]'
         }`}
       >
@@ -22,7 +22,7 @@ export default function CardOffice({ title, officeData }) {
           );
         })}
       </div>
-      <div className='flex mx-16 gap-12 cursor-pointer mt-14'>
+      <div className='flex lg:mx-16 mx-8 gap-12 cursor-pointer mt-14'>
         <Image
           width='48'
           height='27'
