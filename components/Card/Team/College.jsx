@@ -7,16 +7,16 @@ export default function CollegeTeam({ title, description, image }) {
     <section className=' w-full'>
       <div className=' container mx-auto'>
         <div
-          className={`flex lg:w-[1120px] lg:h-[192px] lg:items-center md:flex-col lg:flex-row lg:gap-[200px] lg:mx-16 mx-8 lg:pt-72 lg:mt-10 md:py-20`}
+          className={`flex lg:w-[1120px] lg:h-[192px] lg:items-center flex-col lg:flex-row lg:gap-[200px] lg:mx-16 mx-8 lg:pt-72 lg:mt-10 lg:py-0 py-20`}
         >
           <Image
             width='300'
             height='198'
             src={title}
             alt='title'
-            className='md:mb-10'
+            className='mb-10 lg:mb-0'
           />
-          <div>
+          <div className=''>
             <p className='text-base font-primary-font lg:w-[352px] text-card-paragrah lg:h-[104px] lg:mb-4 mb-8'>
               {description}
             </p>

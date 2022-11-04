@@ -4,7 +4,7 @@ import Button from '../../Button/Button';
 
 export default function Service({ title, cardData }) {
   return (
-    <section className='bg-hero-pattern bg-secondary-bg lg:mt-6 lg:pt-44 lg:pb-28 pb-44 pt-20 md:w-full'>
+    <section className='bg-hero-pattern bg-secondary-bg lg:mt-6 lg:pt-44 lg:pb-28 pb-44 md:pt-20 md:w-full'>
       <div className='mx-auto container'>
         <div className=' lg:flex w-[1120px] h-[803px] gap-[100px] lg:mx-16 mx-8'>
           <div className=' w-[352px] lg:h-[730px]'>
@@ -42,7 +42,7 @@ const CardService = ({ subtitle, description, picture }) => {
       <h5 className='text-2xl font-primary-font font-semibold text-white py-6 md:pr-4'>
         {subtitle}
       </h5>
-      <p className='text-paragrah-color text-base pb-8'>{description}</p>
+      <p className='text-paragrah-color text-base md:pb-8'>{description}</p>
     </div>
   );
 };

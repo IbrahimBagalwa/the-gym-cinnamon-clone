@@ -12,7 +12,7 @@ export default function About({ title, image, description, items }) {
               <h2 className='w-[1120px] lg:h-[72px] font-mont-bold text-secondary text-[54px] lg:mb-6'>
                 {title}
               </h2>
-              <p className='lg:w-[448px] w-[394px] lg:h-[78px] text-base text-card-paragrah font-primary-font lg:mb-6'>
+              <p className='lg:w-[448px] w-[380px] md:w-[400px] lg:h-[78px] text-base text-card-paragrah font-primary-font lg:mb-6'>
                 {description}
               </p>
             </div>

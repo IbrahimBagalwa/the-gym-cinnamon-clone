@@ -38,7 +38,7 @@ export default function Communication() {
             </p>
           </div>
         </div>
-        <div className='flex lg:justify-between lg:mb-10 md:flex-col'>
+        <div className='flex lg:justify-between lg:flex-row lg:mb-10 flex-col'>
           <div className='flex lg:mx-16 mx-8 gap-12 cursor-pointer mt-14'>
             <Image
               width='48'
@@ -55,7 +55,7 @@ export default function Communication() {
               className='hover:-translate-y-2 duration-500'
             />
           </div>
-          <div className='text-primary flex lg:mx-16  mx-8 gap-4 text-base font-primary-font font-bold cursor-pointer mt-14'>
+          <div className='text-primary flex lg:mx-16 mx-8 gap-4 text-base font-primary-font font-bold cursor-pointer mt-14'>
             <Image
               width='8'
               height='12'

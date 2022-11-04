@@ -10,7 +10,7 @@ export default function CardOffice({ title, officeData }) {
         {title}
       </h2>
       <div
-        className={`flex justify-between md:overflow-x-auto lg:overflow-x-visible transition-all duration-700  gap-8 lg:ml-16 md:w-[770px] md:mx-8 lg:w-[1263px] ${
+        className={`flex justify-between overflow-x-auto lg:overflow-x-visible transition-all duration-700  gap-8 lg:ml-16 md:w-[770px] w-[540px] mx-8 lg:w-[1263px] ${
           scrolled ? 'lg:-translate-x-[44.7%]' : 'lg:translate-x-[0%]'
         }`}
       >
@@ -22,7 +22,7 @@ export default function CardOffice({ title, officeData }) {
           );
         })}
       </div>
-      <div className='lg:flex lg:mx-16 mx-8 gap-12 cursor-pointer mt-14 md:hidden'>
+      <div className='lg:flex lg:mx-16 mx-8 gap-12 cursor-pointer mt-14 hidden'>
         <Image
           width='48'
           height='27'
@@ -49,7 +49,7 @@ export default function CardOffice({ title, officeData }) {
 }
 const SingleCardOffice = ({ image, detail, title, icon }) => {
   return (
-    <div className='w-[544px] h-[483px]'>
+    <div className='md:w-[544px] w-[310px] md:h-[483px]'>
       <Image
         width='544'
         height='378'
