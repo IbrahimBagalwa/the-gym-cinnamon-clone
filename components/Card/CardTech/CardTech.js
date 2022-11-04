@@ -10,7 +10,7 @@ export default function CardTech({ title, titleLink }) {
         <h2 className='text-[54px] text-secondary font-mont-bold w-[480px] h-[144px] leading-tight lg:mx-16 mx-8 mt-14 mb-14'>
           {title}
         </h2>
-        <div className='flex md:mx-8 lg:items-center justify-around gap-6 lg:mx-16'>
+        <div className='flex md:mx-8 lg:items-center lg:justify-around lg:gap-6 lg:mx-16 md:gap-3 md:w-[500px] lg:w-[1140px]'>
           <TechCard details={detailData} />
         </div>
         <div className='text-primary flex lg:mx-16 mx-8 gap-4 text-base font-primary-font font-bold cursor-pointer mt-14'>
@@ -32,7 +32,7 @@ const TechCard = () => {
       {techData.map((tech) => {
         const { image, subtitle, title, detail } = tech;
         return (
-          <div>
+          <div className=''>
             <Image
               width='352'
               height='216'
@@ -60,7 +60,7 @@ function Detail({ author, date, min, id }) {
   return (
     <div
       key={id}
-      className='w-[320px] grid grid-flow-col gap-[6px] items-center'
+      className='lg:w-[320px] grid grid-flow-col gap-[6px] items-center'
     >
       <div className='whitespace-nowrap text-ellipsis overflow-hidden'>
         {author}

@@ -10,8 +10,8 @@ export default function CardOffice({ title, officeData }) {
         {title}
       </h2>
       <div
-        className={`flex justify-between transition-all duration-700 w- gap-8 lg:ml-16 ml-8 w-[1263px] ${
-          scrolled ? '-translate-x-[44.7%]' : 'translate-x-[0%]'
+        className={`flex justify-between md:overflow-x-auto lg:overflow-x-visible transition-all duration-700  gap-8 lg:ml-16 md:w-[770px] md:mx-8 lg:w-[1263px] ${
+          scrolled ? 'lg:-translate-x-[44.7%]' : 'lg:translate-x-[0%]'
         }`}
       >
         {officeData.map((office) => {
@@ -22,7 +22,7 @@ export default function CardOffice({ title, officeData }) {
           );
         })}
       </div>
-      <div className='flex lg:mx-16 mx-8 gap-12 cursor-pointer mt-14'>
+      <div className='lg:flex lg:mx-16 mx-8 gap-12 cursor-pointer mt-14 md:hidden'>
         <Image
           width='48'
           height='27'
