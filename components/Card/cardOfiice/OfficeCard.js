@@ -58,11 +58,11 @@ const SingleCardOffice = ({ image, detail, title, icon }) => {
         className='py-4'
       />
       <div className='group'>
-        <div className='flex items-center gap-8 text-secondary text-2xl font-mont-bold w-[352px] h-[72px] group-hover:text-primary'>
+        <div className='flex items-center gap-8 text-secondary text-2xl font-mont-bold w-[352px] mt-4 group-hover:text-primary'>
           <Image src={icon} width='18' height='18' alt='location' />
           <h2> {title}</h2>
         </div>
-        <p className='text-base text-card-paragrah w-[506px] group-hover:text-primary pl-12 font-primary-font'>
+        <p className='text-base text-card-paragrah w-[506px] group-hover:text-primary pl-12 font-primary-font mt-2'>
           {detail}
         </p>
       </div>
