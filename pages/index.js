@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Button from '../components/Button/Button';
 import Growing from '../components/cards/Growing/Growing';
-import CardImage from '../components/cards/image/CardImage';
 import Office from '../components/cards/office/Office';
 import College from '../components/cards/Team/College';
 import Team from '../components/cards/team/Team';
@@ -21,6 +20,7 @@ import {
 import { officeData } from '../components/data/techData';
 import Hero from '../components/Hero/Hero';
 import About from '../components/cards/Team/About';
+import Picture from '../components/cards/image/Picture';
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
       {data.map((item) => {
         return (
           <div key={item.id} className='mb-10 lg:mb-32'>
-            <CardImage {...item} />
+            <Picture {...item} />
           </div>
         );
       })}
