@@ -19,7 +19,7 @@ import {
 } from '../components/data/teamData';
 import { officeData } from '../components/data/techData';
 import Hero from '../components/Hero/Hero';
-import About from '../components/cards/Team/About';
+import About from '../components/cards/team/About';
 import Picture from '../components/cards/image/Picture';
 
 export default function Home() {
