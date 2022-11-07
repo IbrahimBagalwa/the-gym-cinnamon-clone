@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function CardOffice({ title, officeData }) {
+export default function Office({ title, officeData }) {
   const [scrolled, setSrolled] = useState(false);
   return (
-    <section className='mb-28 container mx-auto'>
+    <section className='container mx-auto mb-28'>
       <h2 className='text-[54px] text-secondary font-mont-bold w-[480px] h-[144px] leading-tight lg:mx-16 mx-8 mt-20'>
         {title}
       </h2>
@@ -22,7 +22,7 @@ export default function CardOffice({ title, officeData }) {
           );
         })}
       </div>
-      <div className='lg:flex lg:mx-16 mx-8 gap-12 cursor-pointer mt-14 hidden'>
+      <div className='hidden gap-12 mx-8 cursor-pointer lg:flex lg:mx-16 mt-14'>
         <Image
           width='48'
           height='27'

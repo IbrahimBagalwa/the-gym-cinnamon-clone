@@ -138,7 +138,7 @@ export default function Footer() {
           </div>
           <div className='my-5 border-b border-paragrah-color lg:mx-16 md:mx-8'></div>
           <div className='flex justify-between py-8 mx-8 text-white lg:mx-16'>
-            <div className='flex gap-4 text-base text-paragrah-color font-primary-font'>
+            <div className='flex items-center gap-4 text-base md:items-start text-paragrah-color font-primary-font'>
               <p>© 2022 Cinnamon</p>
               <p className='underline'>Privacy Policy</p>
             </div>

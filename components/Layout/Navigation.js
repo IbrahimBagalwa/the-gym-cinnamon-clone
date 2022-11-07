@@ -14,18 +14,18 @@ export default function Navigation() {
 
   return (
     <section
-      className={`fixed w-full mt-8 h-24 -top-8 z-40 ${
+      className={`fixed w-full mt-8 -top-8 z-40 ${
         nav ? 'bg-white text-secondary' : 'bg-transparent text-default'
       }`}
     >
-      <div className='flex items-center justify-between  mx-auto container py-5'>
+      <div className='container flex items-center justify-between py-5 mx-auto'>
         {nav ? (
           <Image
             src='/images/logo-dark.svg'
             width='150'
             height='200'
             alt='logo'
-            className='lg:mx-16 mx-8'
+            className='mx-8 lg:mx-16'
           />
         ) : (
           <Image
@@ -33,18 +33,18 @@ export default function Navigation() {
             width='150'
             height='200'
             alt='logo'
-            className='lg:mx-16 mx-8'
+            className='mx-8 lg:mx-16'
           />
         )}
-        <div className='lg:flex items-center hidden lg:gap-8 lg:mx-16'>
-          <ul className='lg:flex items-center justify-between lg:gap-8 hidden text-base font-mont-semibold'>
+        <div className='items-center hidden lg:flex lg:gap-8 lg:mx-16'>
+          <ul className='items-center justify-between hidden text-base lg:flex lg:gap-8 font-mont-semibold'>
             <li className='cursor-pointer hover:text-primary'>Projects</li>
             <li className='cursor-pointer hover:text-primary'>Services</li>
             <li className='cursor-pointer hover:text-primary'>About Us</li>
             <li className='cursor-pointer hover:text-primary'>Careers</li>
             <li className='cursor-pointer hover:text-primary'>Blog</li>
           </ul>
-          <div className='lg:flex items-center lg:gap-8 hidden'>
+          <div className='items-center hidden lg:flex lg:gap-8'>
             <div
               className={
                 nav
@@ -74,7 +74,7 @@ export default function Navigation() {
             <Button>Contact Us</Button>
           </div>
         </div>
-        <div className='lg:hidden mx-8'>
+        <div className='mx-8 lg:hidden'>
           {nav ? (
             <Image
               src='/images/menu-dark.svg'
