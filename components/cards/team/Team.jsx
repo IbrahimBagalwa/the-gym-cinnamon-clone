@@ -2,17 +2,17 @@ import Image from 'next/image';
 import React from 'react';
 import Button from '../../Button/Button';
 
-export default function TeamCard({ title, description, image, gap }) {
+export default function Team({ title, description, image, gap }) {
   return (
-    <section className=' bg-default w-full'>
-      <div className=' container mx-auto'>
+    <section className='w-full  bg-default'>
+      <div className='container mx-auto '>
         <div
           className={`lg:flex lg:w-[1120px] lg:h-[192px] items-center py-20 lg:py-0  lg:gap-${gap} lg:mx-16 lg:pt-32 mx-8`}
         >
           <h2 className='font-mont-bold text-[54px] text-secondary lg:w-[448px] lg:h-[144px]'>
             Agile team <br /> on demand
           </h2>
-          <div className='lg:hidden block'>
+          <div className='block lg:hidden'>
             <Image
               src={image}
               width='338'
@@ -29,7 +29,7 @@ export default function TeamCard({ title, description, image, gap }) {
           </div>
         </div>
       </div>
-      <div className='hidden lg:flex justify-end'>
+      <div className='justify-end hidden lg:flex'>
         <Image src={image} width='338' height='220' alt={title} className='' />
       </div>
     </section>

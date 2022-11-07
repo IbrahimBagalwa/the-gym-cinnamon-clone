@@ -2,10 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 import Button from '../../Button/Button';
 
-export default function CollegeTeam({ title, description, image }) {
+export default function College({ title, description, image }) {
   return (
-    <section className=' w-full'>
-      <div className=' container mx-auto'>
+    <section className='w-full '>
+      <div className='container mx-auto '>
         <div
           className={`flex lg:w-[1120px] lg:h-[192px] lg:items-center flex-col lg:flex-row lg:gap-[200px] lg:mx-16 mx-8 lg:pt-72 lg:mt-10 lg:py-0 py-20`}
         >
@@ -24,7 +24,7 @@ export default function CollegeTeam({ title, description, image }) {
           </div>
         </div>
       </div>
-      <div className='lg:flex hidden justify-end'>
+      <div className='justify-end hidden lg:flex'>
         <Image
           src={image}
           width='556'

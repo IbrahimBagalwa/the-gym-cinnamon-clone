@@ -1,14 +1,13 @@
 import Image from 'next/image';
 import Button from '../components/Button/Button';
-import OfficeCard from '../components/Card/cardOfiice/OfficeCard';
-import CardTech from '../components/Card/CardTech/CardTech';
-import Growing from '../components/Card/Growing/Growing';
-import CardImage from '../components/Card/ImageCard/CardImage';
-import Service from '../components/Card/ServiceCard/Service';
-import About from '../components/Card/Team/About';
-import CollegeTeam from '../components/Card/Team/College';
-import Communication from '../components/Card/Team/Communication';
-import TeamCard from '../components/Card/Team/TeamCard';
+import Growing from '../components/cards/Growing/Growing';
+import CardImage from '../components/cards/image/CardImage';
+import Office from '../components/cards/office/Office';
+import College from '../components/cards/Team/College';
+import Team from '../components/cards/team/Team';
+import Tech from '../components/cards/tech/Tech';
+import Service from '../components/cards/service/Service';
+import Communication from '../components/cards/team/Communication';
 import { cardData } from '../components/data/cardData';
 import { data } from '../components/data/data';
 import {
@@ -19,8 +18,9 @@ import {
   items,
   teamData,
 } from '../components/data/teamData';
-import { officeData, techData } from '../components/data/techData';
+import { officeData } from '../components/data/techData';
 import Hero from '../components/Hero/Hero';
+import About from '../components/cards/Team/About';
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
       <Hero />
       {data.map((item) => {
         return (
-          <div key={item.id} className='lg:mb-32 mb-10'>
+          <div key={item.id} className='mb-10 lg:mb-32'>
             <CardImage {...item} />
           </div>
         );
@@ -36,33 +36,33 @@ export default function Home() {
 
       <Service title='Our services' cardData={cardData} />
       {teamData.map((team) => {
-        return <TeamCard key={team.id} {...team} />;
+        return <Team key={team.id} {...team} />;
       })}
       <Communication />
       {aboutData.map((about) => {
         return <About {...about} items={items} />;
       })}
       {collegeData.map((college) => {
-        return <CollegeTeam key={college.id} {...college} />;
+        return <College key={college.id} {...college} />;
       })}
       {growData.map((grow) => {
         return <Growing {...grow} careers={careerData} />;
       })}
-      <OfficeCard title='Our offices' officeData={officeData} />
-      <CardTech
+      <Office title='Our offices' officeData={officeData} />
+      <Tech
         title='Stay in the loop on tech topics'
         titleLink='VIEW MORE BLOGS'
       />
       <section className='bg-default'>
-        <div className=' mx-auto container w-full relative'>
-          <div className='lg:-mb-44 md:-mb-20 relative pt-28'>
+        <div className='container relative w-full mx-auto '>
+          <div className='relative lg:-mb-44 md:-mb-20 pt-28'>
             <h2 className='text-center text-secondary text-[54px] font-mont-bold leading-10 hidden md:block'>
               Have a project in mind?
             </h2>
             <h2 className='text-center text-secondary text-[54px] leading-[50px] md:leading-normal font-semibold  md:font-mont-bold  mb-14 '>
               Let's work together.
             </h2>
-            <div className='w-full flex'>
+            <div className='flex w-full'>
               <Button styles='mx-auto px-12'>Contact us</Button>
             </div>
           </div>
