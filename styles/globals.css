@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+font-face {
+  font-family: 'Mont';
+  src: local('Mont'), url('/fonts/MontRegular.woff2') format('woff2'),
+    url('/fonts/Mont/MontRegular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MontSemiBold';
+  src: local('MontBold'), url('/fonts/MontSemiBold.woff2') format('woff2'),
+    url('/fonts/Mont/MontSemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MontBold';
+  src: local('MontHeavy'), url('/fonts/MontBold.woff2') format('woff2'),
+    url('/fonts/Mont/MontBold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MontHeavy';
+  src: local('MontHeavy'), url('/fonts/MontHeavy.woff2') format('woff2'),
+    url('/fonts/Mont/MontHeavy.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+.btn:hover .btn__shadow {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
